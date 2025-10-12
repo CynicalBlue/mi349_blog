@@ -51,7 +51,7 @@ img[alt*="Overlord"] {
 
 .form-grid{
     display: flex;
-    gap: 4em;
+    gap: 6em;
 }
 
 .form-grid > div {
