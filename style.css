@@ -29,7 +29,7 @@ p{
 }
 
 img[alt*="Overlord"] {
-    float: right;
+    float: left;
     margin-bottom: 200px;
 }
 
