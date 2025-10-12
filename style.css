@@ -49,3 +49,6 @@ img[alt*="Overlord"] {
     text-align: center;
 }
 
+.main-form{
+    display: flex;
+}
