@@ -29,7 +29,9 @@ p{
 }
 
 .img-container {
-    height: 300px;
-    width: 300px;
+    float: left;
+}
+
+.img-caption {
     float: right;
 }
