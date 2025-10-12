@@ -36,13 +36,6 @@ p{
 .img-caption {
     float: left;
 }
-
-footer {
-    margin-top: 2em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
  
 .spacer {
     min-height: 150px;
