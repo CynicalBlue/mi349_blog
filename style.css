@@ -21,9 +21,9 @@ p{
 }
 
 #blog{
-
+    border-top: 1px dotted white;
 }
 
 .blog-post{
-
+    border-bottom: 1px dotted white;
 }
