@@ -41,3 +41,9 @@ p{
     min-height: 150px;
     display: block;
 }
+
+.sticky{
+    background: blue;
+    position: sticky;
+    top: 0;
+}
