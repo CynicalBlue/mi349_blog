@@ -1,0 +1,29 @@
+html{
+    background: blue;
+}
+
+body{
+    background: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 40 px;
+    padding: 40 px;
+    border-top: 10px solid white;
+}
+
+h1{
+    font-size: 3em;
+    margin: 0;
+}
+
+p{
+    line-height: 1.4em;
+}
+
+#blog{
+
+}
+
+.blog-post{
+
+}
