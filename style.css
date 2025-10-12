@@ -36,3 +36,8 @@ p{
 .img-caption {
     float: left;
 }
+ 
+.spacer {
+    min-height: 600px;
+    display: block;
+}
