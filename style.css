@@ -28,7 +28,7 @@ p{
     border-bottom: 1px dotted white;
 }
 
-.img-container {
+img[alt*="Overlord"] {
     float: left;
     margin-bottom: 200px;
 }
@@ -48,3 +48,4 @@ p{
     top: 0;
     text-align: center;
 }
+
