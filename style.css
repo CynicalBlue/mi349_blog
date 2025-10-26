@@ -58,3 +58,86 @@ img[alt*="Overlord"] {
     flex: 1 1 0;
     min-width: 0;
 }
+
+
+/* ===== Responsive helpers and media queries (added) ===== */
+/* Base responsive helpers */
+*, *::before, *::after { box-sizing: border-box; }
+
+img, video, svg {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+body {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+p, li, td { overflow-wrap: break-word; word-wrap: break-word; }
+
+table { width: 100%; table-layout: auto; }
+
+/* Ensure article images specifically behave well */
+article img { width: 100%; height: auto; display: block; }
+
+/* Tablet-ish: stack floats, allow form columns to wrap (<= 800px) */
+@media (max-width: 800px) {
+    .img-container, .img-caption {
+        float: none;
+        width: 100%;
+        margin: 0 0 1em 0;
+    }
+
+    .blog-post {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .form-grid {
+        flex-wrap: wrap;
+    }
+    .form-grid > div {
+        flex: 1 1 48%;
+        min-width: 220px;
+    }
+
+    .sticky { padding: 0.5em 0; }
+
+    /* Reduce large page padding on medium screens */
+    body { margin: 24px; padding: 24px; }
+}
+
+/* Small phones: single column, larger tap targets and readable text (<= 480px) */
+@media (max-width: 480px) {
+    .form-grid > div {
+        flex: 1 1 100%;
+        min-width: 0;
+    }
+
+    body {
+        margin: 12px;
+        padding: 16px;
+        font-size: 17px;
+    }
+
+    footer, footer form, footer div {
+        width: 100%;
+        text-align: center;
+    }
+
+    button, input[type="submit"], input[type="button"] {
+        padding: 0.75em 1em;
+        font-size: 1rem;
+    }
+
+    .main-form, .form-grid, .blog-post { max-width: 100%; }
+
+    /* Tables can overflow vertically; ensure they wrap */
+    table { font-size: 0.95rem; }
+}
+
+/* Small enhancements to avoid accidental overflow from long content */
+code, kbd, pre { max-width: 100%; overflow-x: auto; }
